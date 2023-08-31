@@ -1,4 +1,4 @@
-let backgrounds = ["bg_01.png","bg_02.png", "bg_03.png", "bg_04.png", "bg_05.png", "bg_06.png", "bg_07.png", "bg_08.png", "bg_09.png", "bg_10.png"];
+let backgrounds = ["../src/bg_01.png","../src/bg_02.png", "../src/bg_03.png", "../src/bg_04.png", "../src/bg_05.png", "../src/bg_06.png", "../src/bg_07.png", "../src/bg_08.png", "../src/bg_09.png", "../src/bg_10.png"];
 let currentIndex = 0;
 
 function changeBackground() {
