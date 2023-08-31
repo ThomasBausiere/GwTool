@@ -26,26 +26,17 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Utiliser un tableau ou un objet pour stocker les contenus de chaque élément
     const contents = {
       '0': [
         { text: "Jeu 1", link: "/jeu-1" },
-        { text: "Jeu 2", link: "/jeu-2" },
-        // ... (et ainsi de suite)
+        { text: "Jeu 2", link: "/jeu-2" }
       ],
       '1': [
         { text: "Option de compte 1", link: "/compte/option-1" },
-        { text: "Option de compte 2", link: "/compte/option-2" },
-        // ...
+        { text: "Option de compte 2", link: "/compte/option-2" }
       ],
-      '2': [
-        { text: "Daily Activities", link: "https://wiki.guildwars.com/wiki/Daily_activities" },
-        { text: "Weekly Activities", link: "https://wiki.guildwars.com/wiki/Weekly_activities" },
-        { text: "Nick Sets Cycle", link: "https://wiki.guildwars.com/wiki/Nicholas_the_Traveler/Cycle" },
-        { text: "Kamadan Trade Chat", link: "https://kamadan.gwtoolbox.com" },
-      ]
+      // ... (ajoutez d'autres contenus ici)
     };
-  
 
     const currentContent = contents[index];
     if (currentContent) {
@@ -53,15 +44,12 @@ document.addEventListener("DOMContentLoaded", () => {
         ${currentContent.map(item => `<li><a class="menu-button" role="button"  href="${item.link}" target="_blank">${item.text}</a></li>`).join('')}
       </ul>`;
       contentDiv.innerHTML = newContent;
-    }
 
-    const buttonsArray = contents[index].map(item => {
-      return `<button class='menu2-button' onclick='window.open("${item.link}", "_blank")'>${item.text}</button>`;
-    });
-    
-    
-    contentDiv.innerHTML = buttonsArray.join("");
-    
+      const buttonsArray = currentContent.map(item => {
+        return `<button class='menu2-button' onclick='window.open("${item.link}", "_blank")'>${item.text}</button>`;
+      });
+      contentDiv.innerHTML += buttonsArray.join("");
+    }
   }
 
   

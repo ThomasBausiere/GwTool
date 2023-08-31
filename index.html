@@ -2,20 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>GW, l'Ultime Site</title>
+  <title>Guild Wars</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="background">
-    <nav class="menu">
-      <ul>
-        <li class="selected"><a href="#">Jeu</a></li>
-        <li class="nearly-selected"><a href="#">Compte</a></li>
-        <li class="not-selected"><a href="#">Sites </a></li>
-      </ul>
-    </nav>
+  
+  <nav class="menu">
+    <ul id="menuList">
+      <li class="selected"><a href="#" data-content="content1">Jeu</a></li>
+      <li class="nearly-selected"><a href="#" data-content="content2">Compte</a></li>
+      <li class="not-selected"><a href="#" data-content="content3">Sites</a></li>
+    </ul>
+  </nav>
+
+  <div id="content" class="content">
+    <!-- Ici le contenu sera injecté -->
   </div>
-  <script src="./script.js"></script>
-  <script src="./script2.js"></script>
+
+  <script src="script.js"></script>
+  <script src="script2.js"></script>
+  <!-- <script src="testscript.js"></script> -->
+
+
 </body>
 </html>
