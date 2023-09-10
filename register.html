@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Inscription</title>
     <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 <body>
 
-<h2>Inscription</h2>
+
 <div class="center-container">
-
+<h2>Inscription</h2>
 <form action="php/register.php" method="post">
-    <label for="username">Nom d'utilisateur :</label>
-    <input type="text" id="username" name="username" required><br>
-
-    <label for="email">Email :</label>
-    <input type="email" id="email" name="email" required><br>
-
-    <label for="password">Mot de passe :</label>
-    <input type="password" id="password" name="password" required><br>
-
+    <div class="content">
+        <label for="username">Nom d'utilisateur :</label>
+        <input type="text" id="username" name="username" required><br>
+    </div>
+    <div class="content">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required><br>
+    </div>
+    <div class="content">
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required><br>
+    </div>
     <input type="submit" value="S'inscrire">
+    <a href="login.html">déjà inscrit?</a>
+    <div id="message"></div>
 </form>
 </div>
+<script src="javascript/register_ajax.js"></script>
 </body>
 </html>

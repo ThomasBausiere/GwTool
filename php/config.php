@@ -4,10 +4,11 @@
 // Connexion à la base de données
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "root";
 $dbname = "page_login";
 
 // Création de la connexion
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Vérification de la connexion

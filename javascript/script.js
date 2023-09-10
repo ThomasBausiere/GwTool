@@ -29,15 +29,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // Utiliser un tableau ou un objet pour stocker les contenus de chaque élément
     const contents = {
       '0': [
-        { text: "Jeu 1", link: "/jeu-1" },
-        { text: "Jeu 2", link: "/jeu-2" },
-        // ... (et ainsi de suite)
+        { text: "Les classes", link: "Les classes" },
+        { text: "Les coops", link: "Missions en mode coopératif" },
+        { text: "Les titres", link: "Les titres" },
       ],
+
       '1': [
-        { text: "Option de compte 1", link: "/compte/option-1" },
-        { text: "Option de compte 2", link: "/compte/option-2" },
-        // ...
+        { text: " Ajout personnage ", link: "" },
+        { text: "#", link: "#" },
+       
       ],
+
       '2': [
         { text: "Daily Activities", link: "https://wiki.guildwars.com/wiki/Daily_activities" },
         { text: "Weekly Activities", link: "https://wiki.guildwars.com/wiki/Weekly_activities" },
