@@ -5,7 +5,7 @@ session_start();
 // Vérification de l'état de la connexion de l'utilisateur
 if (!isset($_SESSION['username'])) {
     // Si l'utilisateur n'est pas connecté, le rediriger vers la page de connexion
-    header("Location: ../login.html");
+    header("Location: ../php/login2.php");
     exit();
 }
 

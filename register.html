@@ -5,30 +5,28 @@
     <title>Inscription</title>
     <link rel="stylesheet" type="text/css" href="css/style2.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 </head>
 <body>
-
-
 <div class="center-container">
-<h2>Inscription</h2>
-<form action="php/register.php" method="post">
-    <div class="content">
-        <label for="username">Nom d'utilisateur :</label>
-        <input type="text" id="username" name="username" required><br>
-    </div>
-    <div class="content">
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" required><br>
-    </div>
-    <div class="content">
-        <label for="password">Mot de passe :</label>
-        <input type="password" id="password" name="password" required><br>
-    </div>
-    <input type="submit" value="S'inscrire">
-    <a href="login.html">déjà inscrit?</a>
-    <div id="message"></div>
-</form>
+    <h2>Inscription</h2>
+    <form action="php/register.php" method="post">
+        <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+        <div class="content">
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text" id="username" name="username" required><br>
+        </div>
+        <div class="content">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br>
+        </div>
+        <div class="content">
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required><br>
+        </div>
+        <input type="submit" value="S'inscrire">
+        <a href="/php/login2.php">Déjà inscrit?</a>
+        <div id="message"></div>
+    </form>
 </div>
 <script src="javascript/register_ajax.js"></script>
 </body>
